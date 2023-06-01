@@ -1,0 +1,15 @@
+import random
+
+def pick_name(names):
+    """
+    Randomly picks a name from the provided list.
+    """
+    if len(names) == 0:
+        return "No names found."
+    else:
+        return random.choice(names)
+
+# Example usage
+name_list = ["Alice", "Bob", "Charlie", "David", "Eve"]
+picked_name = pick_name(name_list)
+print("The picked name is:", picked_name)
